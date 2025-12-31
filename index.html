@@ -1,83 +1,166 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <meta
-      name="trustpilot-one-time-domain-verification-id"
-      content="e7fde8c5-aaf9-473a-b59e-d1f4a8847cd8"
-    />
-    <meta
-      name="description"
-      content="AI landing page builder that creates stunning designs in seconds. No design skills needed. Export to HTML & Figma. Trusted by 65,000+ users worldwide."
-    />
-    <title>DEVLOPER ADITYA | dev.aditya</title>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEVLOPER ADITYA | aditya.dev</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+body { font-family: 'Inter', sans-serif; }
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+/* Custom scrollbar to match dark theme */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #050308; }
+::-webkit-scrollbar-thumb { background: #3b0764; border-radius: 3px; }
+/* Subtle glow animation for the background */
+@keyframes pulse-glow {
+0%, 100% { opacity: 0.6; transform: scale(1); }
+50% { opacity: 0.8; transform: scale(1.05); }
+}
+.animate-glow {
+animation: pulse-glow 8s ease-in-out infinite;
+}
+</style></head>
+<body class="bg-[#020005] text-white min-h-screen overflow-x-hidden selection:bg-violet-500/30 selection:text-violet-200">
 
-    <!-- Open Graph (fallback for prerender/bots) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Aura" />
-    <meta
-      property="og:title"
-      content="Aura | AI Website Builder – No Code, No Design Skills"
-    />
-    <meta
-      property="og:description"
-      content="AI landing page builder that creates stunning designs in seconds. No design skills needed. Export to HTML & Figma. Trusted by 65,000+ users worldwide."
-    />
-    <meta property="og:image" content="https://aura.build/share-preview.jpg" />
-    <meta property="og:url" content="https://aura.build/" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <!-- Ambient Background Lighting -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <!-- Main purple sweep (Top Left) -->
+        <div class="absolute -top-[20%] -left-[10%] w-[80vw] h-[60vw] bg-[#5b21b6] rounded-full blur-[140px] opacity-40 mix-blend-screen animate-glow"></div>
+        
+        <!-- Secondary blue/purple glow (Center/Right) -->
+        <div class="absolute top-[20%] right-[-10%] w-[50vw] h-[50vw] bg-[#4c1d95] rounded-full blur-[120px] opacity-20 mix-blend-screen"></div>
+        
+        <!-- Accent streaks (Bottom Left) -->
+        <div class="absolute bottom-[-10%] left-[20%] w-[40vw] h-[40vw] bg-[#2e1065] rounded-full blur-[100px] opacity-30"></div>
+    </div>
 
-    <!-- Twitter / X Card (fallback for prerender/bots) -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@mengto" />
-    <meta
-      name="twitter:title"
-      content="Aura | AI Website Builder – No Code, No Design Skills"
-    />
-    <meta
-      name="twitter:description"
-      content="AI landing page builder that creates stunning designs in seconds. No design skills needed. Export to HTML & Figma. Trusted by 65,000+ users worldwide."
-    />
-    <meta name="twitter:image" content="https://aura.build/share-preview.jpg" />
+    <!-- Navigation -->
+    <nav class="relative z-50 w-full max-w-[1400px] mx-auto px-6 py-8 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <span class="text-2xl font-bold tracking-tight text-white">Nexara</span>
+        </div>
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-2M6V79H761"
-    ></script>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+            <!-- Active State (Pill) -->
+            <a href="#" class="px-5 py-1.5 rounded-full bg-white/10 border border-white/10 text-[11px] font-semibold text-white tracking-widest hover:bg-white/20 transition-all shadow-[0_0_15px_rgba(139,92,246,0.3)]">
+                HOME
+            </a>
+            
+            <!-- Other Links -->
+            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Services</a>
+            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Process</a>
+            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Clients</a>
+            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Blog</a>
+            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Contacts</a>
+        </div>
+
+        <!-- Mobile Menu Trigger -->
+        <div class="md:hidden text-white cursor-pointer">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative z-10 w-full max-w-[1400px] mx-auto px-6 flex flex-col lg:flex-row items-center min-h-[calc(100vh-100px)] lg:pt-0 pt-10">
+        
+        <!-- Left Column: Typography -->
+        <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-12 lg:pr-10">
+            
+            <!-- Headline -->
+            <div>
+                <h1 class="text-[15vw] lg:text-[160px] font-bold tracking-tighter leading-[0.8] text-white drop-shadow-2xl">
+                    Nexara
+                </h1>
+            </div>
+
+            <!-- Subtitle lockup -->
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                <!-- Icon Circle -->
+                <div class="w-14 h-14 rounded-full bg-[#1a1025] border border-white/10 flex items-center justify-center shadow-[0_0_20px_rgba(124,58,237,0.2)] group cursor-pointer hover:border-violet-500/50 transition-colors">
+                    <i data-lucide="clapperboard" class="w-6 h-6 text-violet-400 fill-violet-400/20"></i>
+                </div>
+
+                <!-- Text -->
+                <div class="space-y-0.5">
+                    <h2 class="text-2xl lg:text-3xl font-medium tracking-tight text-white">
+                        Motion Design
+                    </h2>
+                    <p class="text-xl lg:text-2xl font-light tracking-tight text-gray-400">
+                        &amp; Video Advertising
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carousel Dots -->
+            <div class="flex gap-3 pt-4">
+                <div class="w-2.5 h-2.5 rounded-full bg-violet-600 shadow-[0_0_10px_rgba(139,92,246,0.8)]"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-gray-800 hover:bg-gray-600 transition-colors cursor-pointer"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-gray-800 hover:bg-gray-600 transition-colors cursor-pointer"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-gray-800 hover:bg-gray-600 transition-colors cursor-pointer"></div>
+            </div>
+        </div>
+
+        <!-- Right Column: 3D House Visual -->
+        <div class="w-full lg:w-1/2 relative mt-16 lg:mt-0">
+            
+            <!-- Background Glow behind visual -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-violet-900/20 blur-[80px] rounded-full pointer-events-none"></div>
+
+            <!-- House Container -->
+            <div class="relative w-full aspect-square md:aspect-[4/3] group">
+                
+                <!-- Main Image Masked to look like a floating object -->
+                <!-- Using a specific architectural image to mimic the "house" look -->
+                <div class="relative w-full h-full z-10 transition-transform duration-700 hover:scale-[1.02]">
+                   <!-- Dark overlay gradient at bottom for integration -->
+                   <div class="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[#020005] to-transparent z-20"></div>
+                   
+                   <!-- The House Image -->
+                   <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="3D House Render" class="w-full h-full object-cover object-center rounded-xl shadow-2xl brightness-90 contrast-125" style="mask-image: linear-gradient(to bottom, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);">
+
+                   <!-- Purple Tint Overlay to match the theme color "blue or black/purple" -->
+                   <div class="absolute inset-0 bg-violet-900/10 mix-blend-overlay pointer-events-none rounded-xl"></div>
+                </div>
+
+                <!-- Floating Element: Video Icon (Top Right) -->
+                <div class="absolute top-8 right-[-10px] md:right-8 z-30 animate-[bounce_3s_infinite]">
+                    <div class="w-14 h-14 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg flex items-center justify-center">
+                        <i data-lucide="video" class="w-6 h-6 text-violet-300 fill-violet-300/20"></i>
+                    </div>
+                </div>
+
+                <!-- Floating Element: Play Button (Bottom Left) -->
+                <div class="absolute bottom-12 -left-4 md:left-8 z-30">
+                    <div class="w-16 h-16 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg flex items-center justify-center group cursor-pointer hover:bg-white/10 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-violet-600 flex items-center justify-center shadow-[0_0_15px_rgba(124,58,237,0.5)]">
+                            <i data-lucide="play" class="w-3 h-3 text-white fill-white ml-0.5"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Made in Aura Badge -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#121212] border border-white/10 text-xs font-medium text-gray-400 hover:text-white hover:border-white/20 transition-all shadow-lg">
+            <span class="font-bold text-gray-500">A</span>
+            <span>Made in Aura</span>
+        </button>
+    </div>
+
+    <!-- Background Streaks/Lines similar to image -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute top-[60%] left-0 w-[60vw] h-[1px] bg-gradient-to-r from-transparent via-violet-500/20 to-transparent rotate-[-15deg]"></div>
+        <div class="absolute top-[70%] left-[10%] w-[40vw] h-[1px] bg-gradient-to-r from-transparent via-violet-500/10 to-transparent rotate-[-15deg]"></div>
+    </div>
+
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-2M6V79H761");
+        lucide.createIcons();
     </script>
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/logo-aura.svg" />
-
-    <!-- Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
-
-    <!-- Iconify Icon Web Component -->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
-    <script type="module" crossorigin src="/assets/index-CF-AK5Y7.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Dgm9Sz7J.css">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-  </head>
-
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+</body></html>
