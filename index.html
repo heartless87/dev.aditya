@@ -1,196 +1,105 @@
-<html lang="en"><head><meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 🔴 TITLE SAME (SEO SAFE) -->
 <title>DEVELOPER ADITYA | aditya.dev</title>
+
+<meta name="description" content="Developer Aditya – Professional website developer creating modern, fast and responsive websites for businesses and individuals.">
+
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-body { font-family: 'Inter', sans-serif; }
-/* Smooth scrolling */
-html { scroll-behavior: smooth; }
-/* Custom scrollbar to match dark theme */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #050308; }
-::-webkit-scrollbar-thumb { background: #3b0764; border-radius: 3px; }
-/* Subtle glow animation for the background */
-@keyframes pulse-glow {
-0%, 100% { opacity: 0.6; transform: scale(1); }
-50% { opacity: 0.8; transform: scale(1.05); }
-}
-.animate-glow {
-animation: pulse-glow 8s ease-in-out infinite;
-}
-</style></head>
-<body class="bg-[#020005] text-white min-h-screen overflow-x-hidden selection:bg-violet-500/30 selection:text-violet-200">
 
-    <!-- Ambient Background Lighting -->
-    <div class="fixed inset-0 pointer-events-none z-0">
-        <!-- Main purple sweep (Top Left) -->
-        <div class="absolute -top-[20%] -left-[10%] w-[80vw] h-[60vw] bg-[#5b21b6] rounded-full blur-[140px] opacity-40 mix-blend-screen animate-glow"></div>
-        
-        <!-- Secondary blue/purple glow (Center/Right) -->
-        <div class="absolute top-[20%] right-[-10%] w-[50vw] h-[50vw] bg-[#4c1d95] rounded-full blur-[120px] opacity-20 mix-blend-screen"></div>
-        
-        <!-- Accent streaks (Bottom Left) -->
-        <div class="absolute bottom-[-10%] left-[20%] w-[40vw] h-[40vw] bg-[#2e1065] rounded-full blur-[100px] opacity-30"></div>
-    </div>
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#050308}
+::-webkit-scrollbar-thumb{background:#3b0764;border-radius:3px}
 
-    <!-- Navigation -->
-    <nav class="relative z-50 w-full max-w-[1400px] mx-auto px-6 py-8 flex items-center justify-between">
-        <!-- Logo -->
-        <div class="flex items-center">
-            <span class="text-2xl font-bold tracking-tight text-white">DEV ADITYA</span>
-        </div>
+@keyframes glow{0%,100%{opacity:.6}50%{opacity:.85}}
+.glow{animation:glow 8s ease-in-out infinite}
+</style>
+</head>
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center gap-8">
-            <!-- Active State (Pill) -->
-            <a href="#" class="px-5 py-1.5 rounded-full bg-white/10 border border-white/10 text-[11px] font-semibold text-white tracking-widest hover:bg-white/20 transition-all shadow-[0_0_15px_rgba(139,92,246,0.3)]">
-                HOME
-            </a>
-            
-            <!-- Other Links -->
-            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Services</a>
-            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Process</a>
-            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Clients</a>
-            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Blog</a>
-            <a href="#" class="text-[11px] font-semibold text-gray-400 hover:text-white transition-colors tracking-widest uppercase">Contacts</a>
-        </div>
+<body class="bg-[#020005] text-white overflow-x-hidden">
 
-        <!-- Mobile Menu Trigger -->
-        <div class="md:hidden text-white cursor-pointer">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-        </div>
-    </nav>
+<!-- 🔹 Background Glow -->
+<div class="fixed inset-0 -z-10 pointer-events-none">
+  <div class="absolute -top-1/4 -left-1/4 w-[80vw] h-[60vw] bg-violet-700 blur-[140px] opacity-40 rounded-full glow"></div>
+  <div class="absolute top-1/4 right-[-10%] w-[50vw] h-[50vw] bg-purple-800 blur-[120px] opacity-20 rounded-full"></div>
+</div>
 
-    <!-- Main Content -->
-    <main class="relative z-10 w-full max-w-[1400px] mx-auto px-6 flex flex-col lg:flex-row items-center min-h-[calc(100vh-100px)] lg:pt-0 pt-10">
-        
-        <!-- Left Column: Typography -->
-        <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-12 lg:pr-10">
-            
-            <!-- Headline -->
-            <div>
-                <h1 class="text-[15vw] lg:text-[160px] font-bold tracking-tighter leading-[0.8] text-white drop-shadow-2xl">
-                    WEBSITE DEVELOPER
-                </h1>
-            </div>
+<!-- 🔹 Navbar -->
+<nav class="max-w-[1400px] mx-auto px-6 py-8 flex justify-between items-center">
+  <h1 class="text-2xl font-bold">DEV ADITYA</h1>
+  <div class="hidden md:flex gap-8 text-xs tracking-widest uppercase">
+    <a class="text-white">Home</a>
+    <a class="text-gray-400 hover:text-white">Services</a>
+    <a class="text-gray-400 hover:text-white">Projects</a>
+    <a class="text-gray-400 hover:text-white">Contact</a>
+  </div>
+</nav>
 
-            <!-- Subtitle lockup -->
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                <!-- Icon Circle -->
-                <div class="w-14 h-14 rounded-full bg-[#1a1025] border border-white/10 flex items-center justify-center shadow-[0_0_20px_rgba(124,58,237,0.2)] group cursor-pointer hover:border-violet-500/50 transition-colors">
-                    <i data-lucide="clapperboard" class="w-6 h-6 text-violet-400 fill-violet-400/20"></i>
-                </div>
+<!-- 🔹 Hero -->
+<main class="max-w-[1400px] mx-auto px-6 min-h-[85vh] flex flex-col lg:flex-row items-center">
+  
+  <div class="lg:w-1/2 space-y-10">
+    <h2 class="text-[15vw] lg:text-[160px] font-bold leading-[0.8]">
+      WEBSITE<br>DEVELOPER
+    </h2>
 
-                <!-- Text -->
-                <div class="space-y-0.5">
-                    <h2 class="text-2xl lg:text-3xl font-medium tracking-tight text-white">
-                        Motion Design
-                    </h2>
-                    <p class="text-xl lg:text-2xl font-light tracking-tight text-gray-400">
-                        &amp; Video Advertising
-                    </p>
-                </div>
-            </div>
+    <p class="text-xl text-gray-400 max-w-md">
+      I build modern, fast & responsive websites for businesses and creators.
+    </p>
+  </div>
 
-            <!-- Carousel Dots -->
-            <div class="flex gap-3 pt-4">
-                <div class="w-2.5 h-2.5 rounded-full bg-violet-600 shadow-[0_0_10px_rgba(139,92,246,0.8)]"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-gray-800 hover:bg-gray-600 transition-colors cursor-pointer"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-gray-800 hover:bg-gray-600 transition-colors cursor-pointer"></div>
-                <div class="w-2.5 h-2.5 rounded-full bg-gray-800 hover:bg-gray-600 transition-colors cursor-pointer"></div>
-            </div>
-        </div>
-                   
-                   <!-- ADITYA DEVLOPER | aditya.dev -->
-                   <img src="photo1.png" alt="Image" class="w-full h-full object-cover object-center rounded-xl shadow-2xl brightness-90 contrast-125" style="mask-image: linear-gradient(to bottom, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);">
-                
-            </div>
-        </div>
-    </main>
+  <img src="photo1.png" alt="Developer Aditya"
+  class="lg:w-1/2 rounded-xl shadow-2xl brightness-90"
+  style="mask-image:linear-gradient(black 80%,transparent)">
+</main>
 
-    <!-- Background Streaks/Lines similar to image -->
-    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div class="absolute top-[60%] left-0 w-[60vw] h-[1px] bg-gradient-to-r from-transparent via-violet-500/20 to-transparent rotate-[-15deg]"></div>
-        <div class="absolute top-[70%] left-[10%] w-[40vw] h-[1px] bg-gradient-to-r from-transparent via-violet-500/10 to-transparent rotate-[-15deg]"></div>
-    </div>
-
-    <script>
-        lucide.createIcons();
-    </script>
-    <!-- Footer -->
-    <footer class="relative z-10 mt-32">
-      <!-- Glass background layer -->
-      <div class="mx-auto max-w-[1400px] px-6">
-        <div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_40px_rgba(139,92,246,0.15)]">
+<!-- 🔹 Footer (Glass) -->
+<footer class="mt-32 max-w-[1400px] mx-auto px-6">
+  <div class="rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-10">
     
-          <!-- Footer Content -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 py-14">
-    
-            <!-- Brand -->
-            <div class="space-y-4">
-              <h3 class="text-2xl font-semibold tracking-tight text-white">
-                DEV ADITYA
-              </h3>
-              <p class="text-sm text-gray-400 leading-relaxed max-w-sm">
-                I design and develop modern, fast and responsive websites
-                that help businesses grow online.
-              </p>
-            </div>
-    
-            <!-- Links -->
-            <div class="space-y-4">
-              <h4 class="text-sm font-semibold tracking-widest text-white uppercase">
-                Navigation
-              </h4>
-              <ul class="space-y-3 text-sm">
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              </ul>
-            </div>
-    
-            <!-- Contact -->
-            <div class="space-y-4">
-              <h4 class="text-sm font-semibold tracking-widest text-white uppercase">
-                Contact
-              </h4>
-              <ul class="space-y-3 text-sm text-gray-400">
-                <li>Email: <span class="text-white">aditya@email.com</span></li>
-                <li>WhatsApp: <span class="text-white">+91 XXXXX XXXXX</span></li>
-              </ul>
-    
-              <!-- Social Icons -->
-              <div class="flex gap-4 pt-2">
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-violet-500/20 hover:border-violet-500/40 transition-all">
-                  <i data-lucide="github" class="w-5 h-5 text-white"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-violet-500/20 hover:border-violet-500/40 transition-all">
-                  <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-violet-500/20 hover:border-violet-500/40 transition-all">
-                  <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
-                </a>
-              </div>
-            </div>
-    
-          </div>
-    
-          <!-- Bottom Bar -->
-          <div class="border-t border-white/10 px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p class="text-xs text-gray-500 tracking-wide">
-              © 2025 DEV ADITYA. All rights reserved.
-            </p>
-            <p class="text-xs text-gray-500 tracking-wide">
-              Designed & Developed by <span class="text-white">Aditya</span>
-            </p>
-          </div>
-    
+    <div class="grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-xl font-semibold">DEV ADITYA</h3>
+        <p class="text-sm text-gray-400 mt-2">
+          Modern & responsive website development for your business.
+        </p>
+      </div>
+
+      <div class="text-sm space-y-2">
+        <p class="uppercase tracking-widest text-white">Navigation</p>
+        <a class="block text-gray-400 hover:text-white">Home</a>
+        <a class="block text-gray-400 hover:text-white">Services</a>
+        <a class="block text-gray-400 hover:text-white">Projects</a>
+        <a class="block text-gray-400 hover:text-white">Contact</a>
+      </div>
+
+      <div class="text-sm space-y-2">
+        <p class="uppercase tracking-widest text-white">Contact</p>
+        <p>Email: aditya@email.com</p>
+        <div class="flex gap-3 pt-2">
+          <i data-lucide="github"></i>
+          <i data-lucide="linkedin"></i>
+          <i data-lucide="instagram"></i>
         </div>
       </div>
-    </footer>
+    </div>
 
-</body></html>
+    <p class="text-xs text-gray-500 mt-10 text-center">
+      © 2025 DEV ADITYA — Designed & Developed by Aditya
+    </p>
+  </div>
+</footer>
+
+<script>lucide.createIcons()</script>
+</body>
+</html>
