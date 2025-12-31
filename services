@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Developer Aditya</title>
+<meta name="description" content="Website development services by Developer Aditya – modern, fast and responsive websites for businesses and creators.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+body{font-family:'Inter',sans-serif}
+html{scroll-behavior:smooth}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#050308}
+::-webkit-scrollbar-thumb{background:#3b0764;border-radius:3px}
+@keyframes glow{0%,100%{opacity:.6}50%{opacity:.85}}
+.glow{animation:glow 8s ease-in-out infinite}
+</style>
+</head>
+
+<body class="bg-[#020005] text-white overflow-x-hidden">
+
+<!-- 🔹 Background Glow -->
+<div class="fixed inset-0 -z-10 pointer-events-none">
+  <div class="absolute -top-1/4 -left-1/4 w-[80vw] h-[60vw] bg-violet-700 blur-[140px] opacity-40 rounded-full glow"></div>
+  <div class="absolute top-1/4 right-[-10%] w-[50vw] h-[50vw] bg-purple-800 blur-[120px] opacity-20 rounded-full"></div>
+</div>
+
+<!-- 🔹 Navbar -->
+<nav class="max-w-[1400px] mx-auto px-6 py-8 flex justify-between items-center">
+  <h1 class="text-2xl font-bold">DEV ADITYA</h1>
+  <div class="hidden md:flex gap-8 text-xs tracking-widest uppercase">
+    <a href="index.html" class="text-gray-400 hover:text-white">Home</a>
+    <a class="text-white">Services</a>
+    <a href="#" class="text-gray-400 hover:text-white">Projects</a>
+    <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+  </div>
+</nav>
+
+<!-- 🔹 Hero -->
+<section class="max-w-[1400px] mx-auto px-6 py-24 text-center">
+  <h2 class="text-[12vw] lg:text-[120px] font-bold leading-[0.9]">
+    SERVICES
+  </h2>
+  <p class="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">
+    Professional web development services tailored to grow your business online.
+  </p>
+</section>
+
+<!-- 🔹 Services Grid -->
+<section class="max-w-[1400px] mx-auto px-6 pb-32">
+  <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Card -->
+    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:border-violet-500/40 transition-all">
+      <i data-lucide="layout" class="w-8 h-8 text-violet-400"></i>
+      <h3 class="text-xl font-semibold mt-4">Website Design</h3>
+      <p class="text-gray-400 mt-2">
+        Clean, modern and user-friendly UI designs that attract visitors.
+      </p>
+    </div>
+
+    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:border-violet-500/40 transition-all">
+      <i data-lucide="code" class="w-8 h-8 text-violet-400"></i>
+      <h3 class="text-xl font-semibold mt-4">Website Development</h3>
+      <p class="text-gray-400 mt-2">
+        Fast, responsive and SEO-friendly websites built with clean code.
+      </p>
+    </div>
+
+    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:border-violet-500/40 transition-all">
+      <i data-lucide="briefcase" class="w-8 h-8 text-violet-400"></i>
+      <h3 class="text-xl font-semibold mt-4">Business Websites</h3>
+      <p class="text-gray-400 mt-2">
+        Professional websites to build trust and grow your brand online.
+      </p>
+    </div>
+
+    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:border-violet-500/40 transition-all">
+      <i data-lucide="user" class="w-8 h-8 text-violet-400"></i>
+      <h3 class="text-xl font-semibold mt-4">Portfolio Websites</h3>
+      <p class="text-gray-400 mt-2">
+        Personal portfolios for developers, designers & freelancers.
+      </p>
+    </div>
+
+    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:border-violet-500/40 transition-all">
+      <i data-lucide="shopping-cart" class="w-8 h-8 text-violet-400"></i>
+      <h3 class="text-xl font-semibold mt-4">E-commerce</h3>
+      <p class="text-gray-400 mt-2">
+        Online stores with smooth UI, product pages and payment setup.
+      </p>
+    </div>
+
+    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:border-violet-500/40 transition-all">
+      <i data-lucide="refresh-cw" class="w-8 h-8 text-violet-400"></i>
+      <h3 class="text-xl font-semibold mt-4">Website Redesign</h3>
+      <p class="text-gray-400 mt-2">
+        Upgrade your old website into a modern, fast & attractive one.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🔹 CTA -->
+<section class="text-center pb-32">
+  <h3 class="text-4xl font-semibold">Let’s Build Your Website</h3>
+  <p class="text-gray-400 mt-4">
+    Ready to start your project? Let’s work together.
+  </p>
+  <a href="#" class="inline-block mt-8 px-8 py-4 rounded-full bg-violet-600 hover:bg-violet-700 transition-all">
+    Contact Me
+  </a>
+</section>
+
+<script>lucide.createIcons()</script>
+</body>
+</html>
